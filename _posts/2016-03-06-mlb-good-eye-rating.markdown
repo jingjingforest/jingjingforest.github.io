@@ -23,14 +23,14 @@ A machine-learning algorithm was able to accurately predict strikes and balls 90
 
 In order to check if this logic holds I first needed to create a data point as to whether a batter swung or not. The Pitchf/X data doesn’t tell us this specifically, but it can be inferred from the outcome of each pitch (strike, swinging strike, ground out, etc.).  After generating this data point, I grouped all pitches into deciles and then calculated the rate at which players swung at those pitches.
 
-![Swing Rates of MLB Players by Bins](www.seanabu.com/img/swing_all.png)	
+![Swing Rates of MLB Players by Bins](http://www.seanabu.com/img/swing_all.png)	
 
  
 Looking at the league as a whole, players swung at just above 25% of the time at pitches that had a 0-0.1 probability of being a strike, while swinging just over 70% of the time at pitches that had 0.9-1 probability of being a strike. 
 
 While this general trend of swinging more as the probability of strike increases is true for every player in the league, the difference in swing rates can be a lot more drastic for some player than others.  
 
-![Comparison of Swing Rates ]({{ site.url }}/img/compareline.png)	
+![Comparison of Swing Rates ](http://seanabu.com/img/compareline.png)	
 
 As you can see from the graph above, Yoenis Cespedes swings more than the league average at pitches that have a low probability of being a strike, while George Springer swings less those pitches.   This trend changes however when looking at pitches that have a high probability of being a strike, with Springer swinging more than the league average and Cespedes swinging less.  When looking at the graph, it seems that George Springer is much better than Yoenis Cespedes at identifying strikes and balls and reacting appropriately, but how much better? These line graphs provide a great visual representation of a player’s swing tendencies, but they are not very useful in comparing multiple players. 
 
@@ -44,13 +44,13 @@ Pitch Score = |Probability Strike – Decision Line|*100
 
 After a score is calculated for each pitch, the mean score is calculated for each player to determine his “Eye Rating.” Under this calculation, a player who perfectly makes decisions about swinging would have a rating of zero and as the rating increases it means the player is worse at making the correct decision. 
  
-![Distribution of EYE Rating]({{ site.url }}/img/eyerating.png)	
+![Distribution of EYE Rating](http://seanabu.com/img/eyerating.png)	
 
 For the 528 players that saw at least 200 pitches during the 2015 season, the mean EYE Rating is 11.53 with a standard deviation of 1.38. Mike Baxter had the lowest/best rating at 7.59, and Rubby De La Rosa had the highest/worst rating at 17.9.  For hitters who had faced over 1000 pitches, Yoenis Cespedes had the worst rating at 14.41, while George Springer had the best rating at 8.56
 
 Now we have a rating where we can compare players and see who has the best “eye” and who has the worst, but does this rating mean anything? Does having a lower Eye rating actually lead to more hits and walks?  To determine this I calculated the correlation coefficient between the EYE Rating and other batting statistics like batting average, on-base percentage, and walk rate.  Below is a heat map showing those correlations.
 
-![Correlation of Batting Statistics]({{ site.url }}/img/heatmap.png)	
+![Correlation of Batting Statistics](http://seanabu.com/img/heatmap.png)	
 
 The strongest correlation with the EYE rating is with a player’s walk rate. As expected, the lower (better) the EYE rating, the more often the batter walks.  There is also a moderate negative correlation with on-base percentage.  This probably is being driven primarily by the correlation to walk rate considering the small correlation the EYE rating has with batting average.  There was a surprisingly small correlation with strike out rate.  One would think that if a hitter is more likely to swing at pitches that are strikes they would be less likely to strike out, but the data does not support that. What is promising is that the rating is not strongly correlated to their number of plate appearances.  This is important because a player’s rating is not a result of how many at bats they have.  
 
