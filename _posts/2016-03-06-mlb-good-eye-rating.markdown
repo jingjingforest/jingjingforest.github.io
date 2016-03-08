@@ -15,7 +15,7 @@ The first step in this task was to classify each pitch as a strike or a ball. Us
 Now that we know which pitches crossed the plate in the strike zone, I wanted to see how accurately a machine-learning algorithm could predict whether or not a pitch would be a strike or ball. Given the certainty of the laws of physics and the amount of data that Pitchf/X collects, I figured this would be fairly easy and an unfair comparison for players. Player cannot wait until the pitch crosses the plate to decide to swing; they have to make a guess about the end location of the ball fairly soon after the pitcher releases it. So I limited the input variables to the ten 10 features of the ball’s movement measured 50 feet away from the plate, 10 feet after being released by the pitcher.
 After splitting the data into two sets and training the model with a random forest classifier on the training set, I was able to achieve 90% prediction accuracy on a test set of the data. Then I used the fitted model to predict the probability of strike for every pitch. Below is a histogram showing the breakdown of the probability that a pitch was a strike.
 
-![Distribution of Stike Probability](www.seanabu.com/img/hist.png)
+![Distribution of Stike Probability](http://www.seanabu.com/img/hist.png)
  
 As you can see, most pitches were easily identified as a strike or ball with a very small percentage of them being close to the borderline. 
 
