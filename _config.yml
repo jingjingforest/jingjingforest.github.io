@@ -4,10 +4,10 @@ header-img: img/home-bg.jpg
 email: seanabu.wilson@gmail.com
 description: "Just a few posts to share my work as a data scientist with you."
 baseurl: ""
-url: "seanabu.github.io"
-twitter_username: SeanAbu
+url: "www.seanabu.com"
+linkedin_username: SeanAbu
 github_username:  SeanAbu
-facebook_username:  SeanAbu
+
 
 # Build settings
 markdown: kramdown
