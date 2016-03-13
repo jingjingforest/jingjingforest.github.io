@@ -32,6 +32,8 @@ While this general trend of swinging more as the probability of strike increases
 
 ![Comparison of Swing Rates ](http://seanabu.com/img/compareline.png)	
 
+[Click here to compare the swing rates of players for 2015](http://eye-rating.seanabu.com/)
+
 As you can see from the graph above, Yoenis Cespedes swings more than the league average at pitches that have a low probability of being a strike, while George Springer swings less those pitches.   This trend changes however when looking at pitches that have a high probability of being a strike, with Springer swinging more than the league average and Cespedes swinging less.  When looking at the graph, it seems that George Springer is much better than Yoenis Cespedes at identifying strikes and balls and reacting appropriately, but how much better? These line graphs provide a great visual representation of a player’s swing tendencies, but they are not very useful in comparing multiple players. 
 
 In order to easily compare all players, we need a rating that condenses a player’s ‘good eye’ and swings into one number. The basis of this rating is whether or not the player made the right decision to swing given the probability of the pitch being a strike. So, a player should swing at every pitch that has a .50 probability of being a strike and should never swing at a pitch that has a .49 probability of being a strike. For this initial rating, I made the decision line be .50, but is possible to dynamically alter the decision line based on the context of each pitch.  For example, if the count is 3-0 with the bases loaded and 0 outs, we could rule that a player should only swing if the probability of strike is higher than .90. Further analysis would be needed to determine the decision line for each situation.  
@@ -40,13 +42,46 @@ So for each pitch, the batter receives a score based on the probability that the
 
 The exact calculation of the pitch score where a player made the wrong decisions is:
 
-Pitch Score = |Probability Strike – Decision Line|*100
+Pitch Score = abs(Probability Strike – Decision Line)*100
 
 After a score is calculated for each pitch, the mean score is calculated for each player to determine his “Eye Rating.” Under this calculation, a player who perfectly makes decisions about swinging would have a rating of zero and as the rating increases it means the player is worse at making the correct decision. 
  
 ![Distribution of EYE Rating](http://seanabu.com/img/eyerating.png)	
 
 For the 528 players that saw at least 200 pitches during the 2015 season, the mean EYE Rating is 11.53 with a standard deviation of 1.38. Mike Baxter had the lowest/best rating at 7.59, and Rubby De La Rosa had the highest/worst rating at 17.9.  For hitters who had faced over 1000 pitches, Yoenis Cespedes had the worst rating at 14.41, while George Springer had the best rating at 8.56
+
+
+###Top 10 players by EYE Rating
+
+|    | Name             | PA  | EYE Rating | BA    | OBP   | SLG   | SO Rate | BB Rate | 
+|----|------------------|-----|------------|-------|-------|-------|---------|---------| 
+| 1  | George Springer  | 451 | 8.56       | 0.276 | 0.367 | 0.459 | 0.242   | 0.111   | 
+| 2  | Ruben Tejada     | 407 | 8.68       | 0.261 | 0.338 | 0.350 | 0.172   | 0.093   | 
+| 3  | Brandon Belt     | 556 | 8.71       | 0.280 | 0.356 | 0.478 | 0.264   | 0.101   | 
+| 4  | Chris Carter     | 460 | 8.75       | 0.199 | 0.307 | 0.427 | 0.328   | 0.124   | 
+| 5  | Chris Iannetta   | 317 | 8.76       | 0.188 | 0.293 | 0.335 | 0.262   | 0.129   | 
+| 6  | Dexter Fowler    | 690 | 8.87       | 0.250 | 0.346 | 0.411 | 0.223   | 0.122   | 
+| 7  | Nick Hundley     | 389 | 9.30       | 0.301 | 0.339 | 0.467 | 0.195   | 0.054   | 
+| 8  | Andrew McCutchen | 685 | 9.33       | 0.292 | 0.401 | 0.488 | 0.194   | 0.143   | 
+| 9  | David Ortiz      | 614 | 9.41       | 0.273 | 0.360 | 0.553 | 0.155   | 0.125   | 
+| 10 | Gregor Blanco    | 372 | 9.52       | 0.291 | 0.368 | 0.413 | 0.159   | 0.108   | 
+
+###Bottom 10 players by EYE Rating
+
+|      | Name            | PA  | EYE Rating | BA    | OBP   | SLG   | SO Rate | BB Rate | 
+|------|-----------------|-----|------------|-------|-------|-------|---------|---------| 
+| 1    | Yoenis Cespedes | 676 | 14.41      | 0.291 | 0.328 | 0.542 | 0.209   | 0.049   | 
+| 2    | Salvador Perez  | 553 | 14.31      | 0.260 | 0.280 | 0.426 | 0.148   | 0.024   | 
+| 3    | Jeff Francoeur  | 343 | 14.26      | 0.258 | 0.286 | 0.433 | 0.225   | 0.038   | 
+| 4    | Kevin Pillar    | 628 | 14.13      | 0.278 | 0.314 | 0.399 | 0.135   | 0.045   | 
+| 5    | Pablo Sandoval  | 505 | 13.99      | 0.245 | 0.292 | 0.366 | 0.145   | 0.050   | 
+| 6    | J.J. Hardy      | 437 | 13.95      | 0.219 | 0.253 | 0.311 | 0.201   | 0.046   | 
+| 7    | C.J. Cron       | 404 | 13.95      | 0.262 | 0.300 | 0.439 | 0.203   | 0.042   | 
+| 8    | Freddy Galvis   | 603 | 13.81      | 0.263 | 0.302 | 0.343 | 0.171   | 0.050   | 
+| 9    | Adam Lind       | 572 | 13.67      | 0.277 | 0.360 | 0.460 | 0.175   | 0.115   | 
+| 10   | Jose Iglesias   | 454 | 13.62      | 0.300 | 0.347 | 0.370 | 0.097   | 0.055   | 
+
+[Click for the EYE Ratings of all Players](http://eye-rating.seanabu.com/stats)
 
 Now we have a rating where we can compare players and see who has the best “eye” and who has the worst, but does this rating mean anything? Does having a lower Eye rating actually lead to more hits and walks?  To determine this I calculated the correlation coefficient between the EYE Rating and other batting statistics like batting average, on-base percentage, and walk rate.  Below is a heat map showing those correlations.
 
