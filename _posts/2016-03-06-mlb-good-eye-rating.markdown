@@ -51,7 +51,7 @@ After a score is calculated for each pitch, the mean score is calculated for eac
 For the 528 players that saw at least 200 pitches during the 2015 season, the mean EYE Rating is 11.53 with a standard deviation of 1.38. Mike Baxter had the lowest/best rating at 7.59, and Rubby De La Rosa had the highest/worst rating at 17.9.  For hitters who had faced over 1000 pitches, Yoenis Cespedes had the worst rating at 14.41, while George Springer had the best rating at 8.56
 
 
-###Top 10 players by EYE Rating
+**Top 10 players by EYE Rating**
 
 |    | Name             | PA  | EYE Rating | BA    | OBP   | SLG   | SO Rate | BB Rate | 
 |----|------------------|-----|------------|-------|-------|-------|---------|---------| 
@@ -66,7 +66,7 @@ For the 528 players that saw at least 200 pitches during the 2015 season, the me
 | 9  | David Ortiz      | 614 | 9.41       | 0.273 | 0.360 | 0.553 | 0.155   | 0.125   | 
 | 10 | Gregor Blanco    | 372 | 9.52       | 0.291 | 0.368 | 0.413 | 0.159   | 0.108   | 
 
-###Bottom 10 players by EYE Rating
+**Bottom 10 players by EYE Rating**
 
 |      | Name            | PA  | EYE Rating | BA    | OBP   | SLG   | SO Rate | BB Rate | 
 |------|-----------------|-----|------------|-------|-------|-------|---------|---------| 
