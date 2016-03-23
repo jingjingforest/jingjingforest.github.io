@@ -19,16 +19,16 @@ From my research, I realized I needed to create a seasonal ARIMA model to foreca
 
 Before we get started, you will need to do is install the [development version (0.7.0)](http://statsmodels.sourceforge.net/developer.html) of statsmodels.  The current version of this module does not have a function for a Seasonal ARIMA model. If you are really against having the development version as your main version of statsmodel, you could set up a virtual environment on your machine where you only use the development version.  
 
-##The Data:
+## The Data:
 Since I can't make my company's data public, I will use a public data set for this tutorial that you can also access [here.](https://datamarket.com/data/set/22w6/portland-oregon-average-monthly-bus-ridership-100-january-1973-through-june-1982-n114#!ds=22w6&display=line)
 It is a monthly count of riders for the Portland public transportation system.  The website states that it is from January 1973 through June 1982, but when you download the data starts in 1960.  I believe there is a mistake in the data, but either way it doesn’t really affect the analysis. I mad a few transformations to the data that you can see in my [complete ipython notebook]()
 
 
-##The process:
+## The process:
 
 ![alt text](http://www.seanabu.com/img/flowchart.png)
 
-###1. Visualize the data:
+### 1. Visualize the data:
 We first want to visualize the data to understand what type of model we should use.  Is there an overall trend in your data that you should be aware of? Does the data show any seasonal trends? This is important when deciding which type of model to use. If there isn't a seasonal trend in your data, then you can just use a regular ARIMA model instead. If you are using daily data for your time series and there is too much variation in the data to determine the trends, you might want to look at [resampling](http://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.resample.html) your data by month, or looking at the [rolling mean](http://pandas.pydata.org/pandas-docs/version/0.17.0/generated/pandas.rolling_mean.html).
 
 As we visualize the Portland public transit data we can see there is both an upward trend in the data and there is seasonality to it.  
@@ -50,7 +50,7 @@ You can actually access each component of the decomposition as such:
 
 The residual values essentially take out the trend and seasonality of the data, making the values independent of time. You could try to model the residuals using exogenous variables, but it could be tricky to then try and convert the predicted residual values back into meaningful numbers. 
 
-###2. Stationarize the data:
+### 2. Stationarize the data:
 
 What does it mean for data to be stationary?  
 
@@ -125,7 +125,7 @@ Compared to the original data this is an improvement, but we are not there yet. 
 
 As you can see by the p-value, taking the seasonal first difference has now made our data stationary. I also looked at doing this differencing for the log values, but it didn't make the data any more stationary.  
 
-###3. Plot the ACF and PACF charts and find the optimal parameters
+### 3. Plot the ACF and PACF charts and find the optimal parameters
 
 The next step is to determine the tuning parameters of the model by looking at the autocorrelation and partial autocorrelation graphs. There are many [rules and best practices](http://people.duke.edu/~rnau/arimrule.htm) about how to select the appropriate AR, MA, SAR, and MAR terms for the model. The chart below provides a brief guide on how to read the autocorrelation and partial autocorrelation graphs to select the proper terms. The big issue as with all models is that you don’t want to overfit your model to the data by using too many terms. 
 
@@ -150,7 +150,7 @@ Now that we know we need to make and the parameters for the model ((0,1,0)x(1,1,
 
 ![alt text](http://www.seanabu.com/img/ts_results.png)
 
-###5. Make Predictions:
+### 5. Make Predictions:
 Now that we have a model built, we want to use it to make forecasts. First I am using the model to forecast for time periods that we already have data for, so we can understand how accurate are the forecasts. 
 
     df['forecast'] = results.predict(start = 102, end= 114, dynamic= True)  
