@@ -7,7 +7,7 @@ author:     "Sean Abu"
 header-img: "img/post-bg-06.jpg"
 ---
 
-At my job, I was recently tasked with creating a monthly forecast for the next year for the sales of a product. In my research to learn about time series analysis and forecasting, I can across three sites that were very helpful in helping me to understand time series modeling, as well as how to create a model.
+I was recently tasked with creating a monthly forecast for the next year for the sales of a product. In my research to learn about time series analysis and forecasting, I can across three sites that were very helpful in helping me to understand time series modeling, as well as how to create a model.
 
 1.	[Statistical forecasting: notes on regression and time series analysis:](http://people.duke.edu/~rnau/411home.htm)  This site provides a deep dive into time series analysis, explaining every aspect in detail. It really helped to me understand what I was doing, but lacked coded examples.
 2.	[A Complete Tutorial on Time Series Modeling in R:](http://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/) This is a great tutorial where I was able to better understand stuff from the first site by having a real world example.  There are R code examples to follow, but that was only so helpful for me because I work in Python. 
