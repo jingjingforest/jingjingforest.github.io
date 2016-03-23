@@ -55,13 +55,13 @@ The residual values essentially take out the trend and seasonality of the data, 
 What does it mean for data to be stationary?  
 
 1. The mean of the series should not be a function of time. The red graph below is not stationary because the mean increases over time.
-![alt text](http://www.seanabu.com/img/mean_nonstationary.png)
+![alt text](http://www.seanabu.com/img/Mean_nonstationary.png)
 
 2. The variance of the series should not be a function of time. This property is known as homoscedasticity. Notice in the red graph the varying spread of data over time.
- ![alt text](http://www.seanabu.com/img/var_nonstationary.png)
+![alt text](http://www.seanabu.com/img/Var_nonstationary.png)
 
 3. Finally, the covariance of the i th term and the (i + m) th term should not be a function of time. In the following graph, you will notice the spread becomes closer as the time increases. Hence, the covariance is not constant with time for the ‘red series’.
-![alt text](http://www.seanabu.com/img/cov_nonstationary.png)
+![alt text](http://www.seanabu.com/img/Cov_nonstationary.png)
 
 
 Why is this important? When running a linear regression the assumption is that all of the observations are all independent of each other. In a time series, however, we know that observations are time dependent. It turns out that a lot of nice results that hold for independent random variables (law of large numbers and central limit theorem to name a couple) hold for stationary random variables. So by making the data stationary, we can actually apply regression techniques to this time dependent variable. 
@@ -141,7 +141,7 @@ Below are the ACF and PACF charts for the seasonal first difference values (henc
 
 Because the autocorrelation of the differenced series is negative at lag 12 (one year later), I should an SMA term to the model. Trying out different terms, I find that adding a SAR term improves the accuracy of the prediction for 1982. By including this term, I could be overfitting my model. For my job I was fitting models for many different products and reading these charts slowed down the process. So I created a function that fitted models using all possible combinations of the parameters, used those models to predict the outcome for multiple time periods, and then selected the model with the smallest sum of squared errors.  
 
-###4. Build Model:
+### 4. Build Model:
 Now that we know we need to make and the parameters for the model ((0,1,0)x(1,1,1,12), actually building it is quite easy.  
 
     mod = sm.tsa.statespace.SARIMAX(df.riders, trend='n', order=(0,1,0), seasonal_order=(1,1,1,12))
@@ -186,5 +186,6 @@ Now I will have use the predict function to create forecast values for these new
 ![alt text](http://www.seanabu.com/img/ts_predict_future.png)
 
 ## End Notes:
+
 Again this is just a quick run through of this process in Python. If you are unsure of any of the math behind this, I would refer you back to the first link I provided. Also, this model in statsmodel does allow for you to add in exogenous variables to the regression, which I will explore more in a future post. 
 
