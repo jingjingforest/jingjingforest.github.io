@@ -7,11 +7,11 @@ author:     "Sean Abu"
 header-img: "img/post-bg-06.jpg"
 ---
 
-I was recently tasked with creating a monthly forecast for the next year for the sales of a product. In my research to learn about time series analysis and forecasting, I can across three sites that were very helpful in helping me to understand time series modeling, as well as how to create a model.
+I was recently tasked with creating a monthly forecast for the next year for the sales of a product. In my research to learn about time series analysis and forecasting, I came across three sites that helped me to understand time series modeling, as well as how to create a model.
 
 1.	[Statistical forecasting: notes on regression and time series analysis:](http://people.duke.edu/~rnau/411home.htm)  This site provides a deep dive into time series analysis, explaining every aspect in detail. It really helped to me understand what I was doing, but lacked coded examples.
 2.	[A Complete Tutorial on Time Series Modeling in R:](http://www.analyticsvidhya.com/blog/2015/12/complete-tutorial-time-series-modeling/) This is a great tutorial where I was able to better understand stuff from the first site by having a real world example.  There are R code examples to follow, but that was only so helpful for me because I work in Python. 
-3.	[Complete guide to create a Time Series Forecast (with Codes in Python):](http://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/) This is not as thorough as the first two examples, but it had Python code examples which really helped me.  
+3.	[Complete guide to create a Time Series Forecast (with Codes in Python):](http://www.analyticsvidhya.com/blog/2016/02/time-series-forecasting-codes-python/) This is not as thorough as the first two examples, but it has Python code examples which really helped me.  
 
 
 From my research, I realized I needed to create a seasonal ARIMA model to forecast the sales. I was able to piece together how to do this from the sites above, but none of them gave a full example of how to run a Seasonal ARIMA model in Python. So this is a quick tutorial showing that process. 
