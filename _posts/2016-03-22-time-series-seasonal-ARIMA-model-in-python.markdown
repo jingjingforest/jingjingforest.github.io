@@ -21,7 +21,7 @@ Before we get started, you will need to do is install the [development version (
 
 ## The Data:
 Since I can't make my company's data public, I will use a public data set for this tutorial that you can also access [here.](https://datamarket.com/data/set/22w6/portland-oregon-average-monthly-bus-ridership-100-january-1973-through-june-1982-n114#!ds=22w6&display=line)
-It is a monthly count of riders for the Portland public transportation system.  The website states that it is from January 1973 through June 1982, but when you download the data starts in 1960.  I believe there is a mistake in the data, but either way it doesn’t really affect the analysis. I mad a few transformations to the data that you can see in my [complete ipython notebook]()
+It is a monthly count of riders for the Portland public transportation system.  The website states that it is from January 1973 through June 1982, but when you download the data starts in 1960.  I believe there is a mistake in the data, but either way it doesn’t really affect the analysis. I mad a few transformations to the data that you can see in my [complete ipython notebook](https://github.com/seanabu/seanabu.github.io/blob/master/Seasonal_ARIMA_model_Portland_transit.ipynb)
 
 
 ## The process:
@@ -188,4 +188,6 @@ Now I will have use the predict function to create forecast values for these new
 ## End Notes:
 
 Again this is just a quick run through of this process in Python. If you are unsure of any of the math behind this, I would refer you back to the first link I provided. Also, this model in statsmodel does allow for you to add in exogenous variables to the regression, which I will explore more in a future post. 
+
+[Complete ipython notebook](https://github.com/seanabu/seanabu.github.io/blob/master/Seasonal_ARIMA_model_Portland_transit.ipynb)
 
