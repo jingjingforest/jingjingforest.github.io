@@ -148,7 +148,7 @@
                 "translate(" + margin.left + "," + margin.top + ")");
         var data;
         // Get the data
-        d3.json("data.json", function (error, json) {
+        d3.json("/data.json", function (error, json) {
             console.log(json)
 
             json.forEach(function (d) {
