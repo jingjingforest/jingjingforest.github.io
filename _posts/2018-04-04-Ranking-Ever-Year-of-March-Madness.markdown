@@ -20,7 +20,9 @@ The upset score for a tournament is calculated by on a per game basis and then a
 This scoring format takes into consideration the likelihood of each upset, according to seeding, as well as deep runs by Cinderella teams. A tournament that goes ‘chalk’ would earn an upset score of 0. While the opposite, a tournament where the lower seed wins every game, would have a score of 655. The average upset score of the tournaments over the last 34 years has been 96 points.
  
 So where does the 2018 NCAA Tournament rank in terms of ‘Madness’? It comes in third with a score of 135 points, behind 2014 (142 points) and 2013 (138 points). 
- 
+
+
+ {% include stack_bar.html %}
 
 <p></p>
  In 2014, the tournament started off relatively average with a first round score of 46 points, about 5 more than the average. But as the 8th-seeded Kentucky Wildcats and the 7th-seeded UConn Huskies marched towards the finals – the largest average seed of any championship game – that year’s score rose to the top. The second “maddest” tournament, in 2013, unfolded in a completely different manner. The underdogs that year racked up 105 points through the first two rounds – the most ever – but the #1 seeded Louisville Cardinals won the championship that year, preventing it from being the craziest ever. The least chaotic tournament ever was in 2007 when #1 Florida beat fellow #1 seed Ohio State, and the total upset score was 27. There were only 13 games in which a the winning seed was the expected winner, and eight of these "upsets" were by teams ranked only one seed lower than their opponent. The biggest Cinderella that year was #7-seed UNLV, who made it to the Sweet Sixteen. 30 other tournaments had a higher upset score in just the first round than 2007 had for the entire tournament. The next lowest year was 1995, which had a upset score that was 2.5 times higher than 2007.  
