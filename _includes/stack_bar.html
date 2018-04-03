@@ -38,7 +38,7 @@
 </style>
 
 <body>
-    <h2>Yearly Upset Score</h2>
+    <h3>Total Upset Score by Year</h3>
     <div id='stacked-bar'></div>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script>
@@ -48,7 +48,7 @@
                     domEle = config.element,
                     stackKey = config.key,
                     data = config.data,
-                    margin = { top: 20, right: 20, bottom: 30, left: 50 },
+                    margin = { top: 20, right: 20, bottom: 30, left: 30 },
                     parseDate = d3.timeParse("%Y"),
                     width = 960 - margin.left - margin.right,
                     height = 500 - margin.top - margin.bottom,
@@ -125,14 +125,14 @@
 
 
                 legend.append("rect")
-                    .attr("x", width - 19)
+                    .attr("x", width - 10)
                     .attr("width", 19)
                     .attr("height", 19)
                     .attr("fill", color);
 
                 legend.append("text")
-                    .attr("x", width - 24)
-                    .attr("y", 9.5)
+                    .attr("x", width - 15)
+                    .attr("y", 5)
                     .attr("dy", "0.32em")
                     .text(function (d) { return "Round" +d; });
 

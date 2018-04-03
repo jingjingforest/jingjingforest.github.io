@@ -21,7 +21,7 @@ As you can see, most pitches either have a very low probability of being a strik
 
 A machine-learning algorithm was able to accurately predict strikes and balls 90% of the time, but how accurately can a baseball player predict strikes and balls? This is difficult to know since there is no direct data point that tells this. However, we can approximate it by looking at whether or not the hitter swung at the pitch. Logically, if a hitter thinks a ball is going to be a strike he will swing at it, and will not swing if he thinks it is going to be a ball. This is obviously not an exact measure, since the context of the situation might change a hitter’s behavior. A hitter might be ahead in the count, 3 balls and 0 strikes, and hold off on swinging in hopes of drawing a walk. As a general rule though, we would expect a hitter to swing more at pitches that have a high likelihood of being a strike and swing less at pitches that are more likely to be a ball. 
 
-In order to check if this logic holds I grouped the pitches into deciles based on their probability of being a strike and then calculated the rate at which players swung at those pitches.
+<p>In order to check if this logic holds I grouped the pitches into deciles based on their probability of being a strike and then calculated the rate at which players swung at those pitches.<p>
 
 ![Swing Rates of MLB Players by Bins](http://www.seanabu.com/img/swing_all.png)	
 
