@@ -23,12 +23,15 @@ So where does the 2018 NCAA Tournament rank in terms of ‘Madness’? It comes 
  
 <!-- {% include stack_bar.html %} -->
 
-In 2014, the tournament started off relatively average with a first round score of 46 points, about 5 more than the average. But as the 8th-seeded Kentucky Wildcats and the 7th-seeded UConn Huskies marched towards the finals – the largest average seed of any championship game – that year’s score rose to the top. The second “maddest” tournament, in 2013, unfolded in a completely different manner. The underdogs that year racked up 105 points through the first two rounds – the most ever – but the #1 seeded Louisville Cardinals won the championship that year, preventing it from being the craziest ever. The least chaotic tournament ever was in 2007 when #1 Florida beat fellow #1 seed Ohio State, and the total upset score was 27. There were only 13 games in which a the winning seed was the expected winner, and eight of these "upsets" were by teams ranked only one seed lower than their opponent. The biggest Cinderella that year was #7-seed UNLV, who made it to the Sweet Sixteen. 30 other tournaments had a higher upset score in just the first round than 2007 had for the entire tournament. The next lowest year was 1995, which had a upset score that was 2.5 times higher than 2007.  
+<p></p>
+ In 2014, the tournament started off relatively average with a first round score of 46 points, about 5 more than the average. But as the 8th-seeded Kentucky Wildcats and the 7th-seeded UConn Huskies marched towards the finals – the largest average seed of any championship game – that year’s score rose to the top. The second “maddest” tournament, in 2013, unfolded in a completely different manner. The underdogs that year racked up 105 points through the first two rounds – the most ever – but the #1 seeded Louisville Cardinals won the championship that year, preventing it from being the craziest ever. The least chaotic tournament ever was in 2007 when #1 Florida beat fellow #1 seed Ohio State, and the total upset score was 27. There were only 13 games in which a the winning seed was the expected winner, and eight of these "upsets" were by teams ranked only one seed lower than their opponent. The biggest Cinderella that year was #7-seed UNLV, who made it to the Sweet Sixteen. 30 other tournaments had a higher upset score in just the first round than 2007 had for the entire tournament. The next lowest year was 1995, which had a upset score that was 2.5 times higher than 2007.  
  
 Looking at the heatmap below you can see how tournaments developed through the rounds. The darker red square show rounds where there was a higher upset score compared to the same round for all other years. Conversely, the darker blue squares highlight rounds where the upset score is lower compared to the same round for all other years.  
+ <p></p>
  
 ![alt text](http://www.seanabu.com/img/MM_heatmap.png)	
 
+<p> </p>
 Who has been the biggest Cinderella of all time? That title remains with the 1985 Villanova Wildcats. As the lowest seed (#8) to ever win a championship, their tournament run earned a score of 35, which beats out the four #11 seeds (1985 LSU, 2006 George Mason, 2011 VCU, and 2018 Loyola-Chicago) who scored 32 by making it to the Final Four.
  
 ![alt text](http://www.seanabu.com/img/MM_rolling_average.png)	
