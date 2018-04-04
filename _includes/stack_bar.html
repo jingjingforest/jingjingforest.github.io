@@ -68,6 +68,7 @@
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
                 tooltip = d3.select("#" + domEle).append('div')
+                    .attr("class", "tooltip")
                     .attr("width", 910)
                     .attr("height", 80)
 
