@@ -40,8 +40,10 @@
 
 <body>
     <h3> Upset Score by Year</h3>
+
     <div id='stacked-bar'></div>
-    <div id='tooltip'> Details </div>
+    <div id="tooltip" class='tooltip'> </div>
+
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
@@ -142,7 +144,7 @@
                 .text(function (d) { return "Round " + d; });
 
 
-            var tooltip = d3.select("body").append("div")
+            var tooltip = d3.select("#tooltip").append("div")
                 .attr("class", "tooltip");
             // .style("display", "none");
 
