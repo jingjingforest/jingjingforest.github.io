@@ -98,7 +98,6 @@
                 .on("mouseover", function () { tooltip.style("display", 'block'); })
                 .on("mouseout", function () { tooltip.style("display", "block"); })
                 .on("mousemove", function (d) {
-                    console.log(d.data)
                     var xPosition = d3.mouse(this)[0] + 15;
                     var yPosition = d3.mouse(this)[1] - 5;
                     // tooltip.attr("transform", "translate(" + 200 + "," + -10 + ")");
