@@ -41,8 +41,8 @@
 <body>
     <h3> Upset Score by Year</h3>
 
-    <div id='stacked-bar'></div></div>
-    <!-- <div id="tooltip" class='tooltip'> -->
+    <div id='stacked-bar'></div>
+    <!-- <div id="tooltip" class='tooltip'> </div>-->
 
 </body>
 <script src="https://d3js.org/d3.v4.min.js"></script>
@@ -68,7 +68,7 @@
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
                 tooltip = d3.select("#" + domEle).append('div')
-                    .attr("class", "tooltip")
+                    .attr("class", 'tooltip')
                     .attr("width", 910)
                     .attr("height", 80)
 
