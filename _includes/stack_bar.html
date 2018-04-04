@@ -25,7 +25,7 @@
         background: #f0f0f0;
     }
 
-    .tooltip {
+    .details {
         position: absolute;
         /* display: none; */
         width: 910px;
@@ -68,7 +68,7 @@
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
                 tooltip = d3.select("#" + domEle).append('div')
-                    .attr("class", 'tooltip')
+//                     .attr("class", 'details')
                     .attr("width", 910)
                     .attr("height", 80)
 
