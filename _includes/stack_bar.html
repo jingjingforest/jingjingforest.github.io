@@ -28,8 +28,8 @@
     .details {
         position: absolute;
         /* display: none; */
-        width: 910px;
-        height: 80px;
+/*         width: 910px;
+        height: 80px; */
         background: #f0f0f0;
         padding: 14px;
         padding-left: 35px;
@@ -68,7 +68,7 @@
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
                 tooltip = d3.select("#" + domEle).append('div')
-//                     .attr("class", 'details')
+                    .attr("class", 'details')
                     .attr("width", 910)
                     .attr("height", 80)
 
