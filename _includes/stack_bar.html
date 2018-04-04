@@ -67,6 +67,9 @@
                     .attr("height", height + margin.top + margin.bottom)
                     .append("g")
                     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+                tooltip = d3.select("#" + domEle).append('div')
+                    .attr("width", 910)
+                    .attr("height", 80)
 
 
             // .attr("class", "toolTip");
@@ -144,7 +147,6 @@
                 .text(function (d) { return "Round " + d; });
 
 
-            var tooltip = d3.select("#tooltip")
             // .style("display", "none");
 
             // tooltip.append("rect")
