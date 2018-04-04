@@ -25,21 +25,23 @@
     svg {
         background: #f0f0f0;
     }
-    .toolTip {
+    .tooltip {
         position: absolute;
-        display: none;
-        min-width: 80px;
-        height: auto;
-        background: none repeat scroll 0 0 #ffffff;
-        border: 1px solid #6F257F;
+        /* display: none; */
+        width: 700px;
+        height: 80px;
+        background: #f0f0f0;
         padding: 14px;
-        text-align: center;
+        padding-left: 35px;
+        text-align: left;
+        font: normal 14px/1.7 sans-serif;
     }
 </style>
 
 <body>
-    <h3>Total Upset Score by Year</h3>
+    <h3> Upset Score by Year</h3>
     <div id='stacked-bar'></div>
+</body>
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script>
         var initStackedBarChart = {
@@ -93,13 +95,16 @@
                     .attr("height", function (d) { return yScale(d[0]) - yScale(d[1]); })
                     .attr("width", xScale.bandwidth())
                     .on("mouseover", function () { tooltip.style("display", 'block'); })
-                    .on("mouseout", function () { tooltip.style("display", "none"); })
+                    .on("mouseout", function () { tooltip.style("display", "block"); })
                     .on("mousemove", function (d) {
-                        console.log(d.data);
+                        console.log(d.data)
                         var xPosition = d3.mouse(this)[0] + 15;
                         var yPosition = d3.mouse(this)[1] - 5;
-                        tooltip.attr("transform", "translate(" + xPosition + "," + yPosition + ")");
-                        tooltip.select("text").text("Year: " + d.data.Season  + "<br>" + "Champion: " + d.data.Champion ).style('fill','black').style('stroke', 'black');
+                        // tooltip.attr("transform", "translate(" + 200 + "," + -10 + ")");
+                        tooltip.html("<b> Year:</b> " + d.data.Season  + " &emsp; &emsp;  <b>Total Upset Score:</b> " + d.data.TR6 +
+                                    " <br> <b>Champion:</b> " + d.data.Champion + " &emsp; &emsp;  <b>Runner Up:</b> " + d.data.RunnerUp +    " &emsp; &emsp; <b>Cinderella: </b> " + d.data.Cinderella + " (" + d.data.UpsetScore + " Points)" +
+                                    " <br> <b>Upset Score</b> &emsp; Round 1: " + d.data[1] + " &emsp; Round 2: " + d.data[2] + "&emsp; Round 3: " + d.data[3] + "&emsp; Round 4: " + d.data[4] + "&emsp; Round 5: " + d.data[5] + "&emsp; Round 6: " + d.data[6]
+                                     );
                     });
 
 
@@ -128,7 +133,7 @@
                     .attr("x", width )
                     .attr("width", 15)
                     .attr("height", 15)
-                    .attr("fill", color);
+                    .attr("fill", function (d, i) { return color(d-1); });
 
                 legend.append("text")
                     .attr("x", width - 10)
@@ -137,21 +142,21 @@
                     .text(function (d) { return "Round " +d; });
 
 
-                var tooltip = svg.append("g")
-                    .attr("class", "tooltip")
-                    .style("display", "none");
+                var tooltip = d3.select("body").append("div")
+                    .attr("class", "tooltip");
+                    // .style("display", "none");
 
-                tooltip.append("rect")
-                    .attr("width", 200)
-                    .attr("height", 160)
-                    .attr("fill", "white")
-                    .style("opacity", 0.5);
+                // tooltip.append("rect")
+                //     .attr("width", 500)
+                //     .attr("height", 80)
+                //     .attr("fill", "white")
+                //     .style("opacity", 0.75);
 
-                tooltip.append("text")
-                    .attr("x", 30)
-                    .attr("dy", "1em")
-                    .style("text-anchor", "left")
-                    .attr("font-size", "10px")
+                // tooltip.append("text")
+                //     .attr("x", 30)
+                //     .attr("dy", "1em")
+                //     .style("text-anchor", "left")
+                //     .attr("font-size", "10px")
                     // .attr("font-weight", "bold");
 
             }

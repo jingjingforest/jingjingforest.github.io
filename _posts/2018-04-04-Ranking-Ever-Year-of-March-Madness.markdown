@@ -4,10 +4,10 @@ title:      "Was 2018 the Craziest NCAA Tournament Ever?"
 subtitle:   "Measuring the 'Madness' of every March"
 date:       2018-04-04 12:00:00
 author:     "Sean Abu"
-header-img: "img/post-bball-01.jpg"
+header-img: "img/post-bball-01-dark.jpg"
 ---
 
-Listening to sports talk radio or talking to your coworker on slack, it might seem as if this year’s tournament was the craziest ever. There was the first ever #16 seed to upset a #1 seed. Loyola-Chicago became the fourth #11 seed to make it to the Final Four, and Kansas State and Florida State both made it to Elite Eight as #9 seeds.  With all of that madness on one side of the bracket, the other side has been much tamer with two #1 seeds making it to the Final Four.
+Listening to sports talk radio or talking to your coworker on Slack, it might seem as if this year’s tournament was the craziest ever. There was the first ever #16 seed to upset a #1 seed. Loyola-Chicago became the fourth #11 seed to make it to the Final Four, and Kansas State and Florida State both made it to Elite Eight as #9 seeds.  With all of that madness on one side of the bracket, the other side has been much tamer with two #1 seeds making it to the Final Four.
 So how much Madness was there this March? How does it compare to 2011 when 8th-seeded Butler made it to the championship game and VCU made it to the Final Four as a #11 seed? Was it crazier than 1985 when Villanova won the championship as a #8 seed? 
 
 Previously there has not been a measure that fully judges the “Madness” of each tournament. [Some articles](https://www.ncaa.com/news/basketball-men/bracketiq/2018-03-31/everything-you-need-know-about-final-four-today) compare the average seeding of the Final Four participants, but this is an incomplete measure because it doesn’t take into account all of the chaos that can happen throughout the tournament. There are years like 1995 when there were a lot of first round upsets, but by the later rounds, the higher seeded teams restored order and the eventual champion was #1-seeded UCLA. Other years can be like 2000 where the first round produced fewer upsets, but you ended up with two #8 seeds in the Final Four with Wisconsin and North Carolina.
