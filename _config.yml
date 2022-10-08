@@ -1,12 +1,12 @@
 # Site settings
-title: SeanAbu 
+title: kmjchaochao
 header-img: img/home-bg.jpg
-email: seanabu.wilson@gmail.com
-description: "Just a few posts to share my work as a data scientist with you."
+email: Kangmj88@163.com
+description: "Just a few posts to share my work with you."
 baseurl: ""
-url: "www.seanabu.com"
-linkedin_username: SeanAbu
-github_username:  SeanAbu
+url: "kmjchaochao.github.io"
+linkedin_username: kmjchaochao
+github_username:  kmjchaochao
 
 
 # Build settings
