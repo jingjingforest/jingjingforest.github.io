@@ -1,0 +1,10 @@
+---
+layout:     post
+title:      "结婚2周年了"
+subtitle:   "我们吃了水车小屋"
+date:       2022-10-07 12:00:00
+author:     "jingjingforest"
+header-img: "img/lishui.jpeg"
+---
+
+今天是我们结婚的2周年，一起去吃了一家好吃的日料店，水车小屋。
